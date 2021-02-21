@@ -2,15 +2,28 @@ import './App.css';
 import icon_web from "./img/icon/browser.png"
 import log_out from "./img/icon/logout.png"
 import Browser from "./component/Browser"
-
+import click from './sfx/click.mp3';
+import React, { useState } from 'react';
 function App() {
+  const [browser, setBrowserVisable] = useState(false);
+  let audio = new Audio(click)
+  const onKey = function (e) {
+    if (e.code === "Escape") {
+      setBrowserVisable(false)
+      audio.play()
+    }
+  }
+  const openBrowser = function () {
+    setBrowserVisable(true)
+  }
+
   return (
     <div className="App">
-        <div className="desktop">
+        <div className="desktop" tabIndex="0" onKeyDown={onKey} onClick={()=>{audio.play()}}>
        
           <div className="desktop-container">
             <div className="grid">
-                <li>
+                <li onClick={openBrowser}>
                   <img src={icon_web}/>
                 </li>
                 <li className="logout">
@@ -18,7 +31,8 @@ function App() {
                 </li>
             </div>
           </div>
-          <Browser/>
+          {browser ? <Browser/> : ""}
+          
         </div>
     </div>
   );
