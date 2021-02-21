@@ -1,0 +1,69 @@
+.browser {
+    background-color:whitesmoke;
+    top:0;
+    left:0;
+    position:absolute;
+    margin-left: 5%;
+    margin-right: 5%;
+    width:89%;
+    height:100%;
+    border-left: 10px;
+    border-right: 10px;
+    border-style: solid;
+    border-image: url("../img/ui/side.png") 30 round;
+    padding: 0;
+}
+.browser .header {
+    background-color: whitesmoke;
+    height: 120px;
+    width:100%;
+    background-image: url("../img/ui/topbarpattern.png");
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+}
+.browser .header .controls {
+    position: relative;
+    top:50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+   
+    display: flex;
+}
+.browser .header input {
+    padding: 5px;
+    margin: 0;
+    width:100%;
+    border: 2px solid;
+    font-weight:bold;
+    font-size: 16px;
+
+}
+.btn_nav_prev {
+    background-image: url("../img/ui/backbut.png");
+    background-size: 100% 100%;
+    width: 45px;
+    height: 35px;
+    margin-left: 10px;
+}
+.btn_nav_next {
+    background-image: url("../img/ui/forbut.png");
+    background-size: 100% 100%;
+    width: 45px;
+    height: 35px;
+}
+
+.btn_mail {
+    background-image: url("../img/ui/mailbut.png");
+    background-size: 100% 100%;
+    width: 50px;
+    height: 35px;
+ 
+}
+.btn_home {
+    background-image: url("../img/ui/homebut.png");
+    background-size: 100% 100%;
+    width: 50px;
+    height: 35px;
+  
+}

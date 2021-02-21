@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import icon_web from "./img/icon/browser.png"
+import log_out from "./img/icon/logout.png"
+import Browser from "./component/Browser"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="desktop">
+       
+          <div className="desktop-container">
+            <div className="grid">
+                <li>
+                  <img src={icon_web}/>
+                </li>
+                <li className="logout">
+                  <img src={log_out}/>
+                </li>
+            </div>
+          </div>
+          <Browser/>
+        </div>
     </div>
   );
 }
