@@ -34,6 +34,7 @@ export default class browser extends Component {
                     width="100%"
                     height="100%"
                     id="myId"
+                    sandbox="allow-popups-to-escape-sandbox	allow-scripts allow-same-origin allow-popups"
                     className="myClassname"
                     display="initial"
                     position="relative"/>
