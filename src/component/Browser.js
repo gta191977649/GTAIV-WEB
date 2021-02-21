@@ -32,7 +32,7 @@ export default class browser extends Component {
                 </div>
                 <Iframe url={this.state.url}
                     width="100%"
-                    height="100%"
+                    height="99%"
                     id="myId"
                     sandbox="allow-popups-to-escape-sandbox	allow-scripts allow-same-origin"
                     className="myClassname"
