@@ -8,6 +8,8 @@ body {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  cursor: url('/src/img/ui/mousepointer.png'), default;
+
 }
 
 code {

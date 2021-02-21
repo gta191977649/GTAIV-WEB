@@ -12,6 +12,7 @@
     border-style: solid;
     border-image: url("../img/ui/side.png") 30 round;
     padding: 0;
+    cursor: url('/src/img/ui/mousepointer.png'), default;
 }
 .browser .header {
     background-color: whitesmoke;

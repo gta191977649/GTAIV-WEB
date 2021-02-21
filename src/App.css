@@ -18,6 +18,9 @@
   width:143px;
   height:100px;
 }
+.desktop li:hover{
+  cursor: url('/src/img/ui/mouselink.png'), pointer;
+}
 .logout {
   position: fixed;
   bottom: 0;
